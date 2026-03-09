@@ -14,9 +14,9 @@ export default function Home() {
     <main style={{ background: 'var(--bg)' }}>
       <Navbar />
       <HeroSection />
-      <ServicesSection />
-      <ProductsSection />
       <ProjectsSection />
+      <ProductsSection />
+      <ServicesSection />
       <ExpertiseSection />
       <AboutSection />
       <TestimonialsSection />
