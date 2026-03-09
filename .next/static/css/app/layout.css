@@ -619,6 +619,15 @@ video {
 .top-\[45\%\]{
   top: 45%;
 }
+.bottom-\[14\%\]{
+  bottom: 14%;
+}
+.top-\[12\%\]{
+  top: 12%;
+}
+.top-\[40\%\]{
+  top: 40%;
+}
 .z-10{
   z-index: 10;
 }
@@ -1518,6 +1527,11 @@ video {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
+.transition-opacity{
+  transition-property: opacity;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
 .duration-200{
   transition-duration: 200ms;
 }
@@ -1997,6 +2011,9 @@ svg * {
 }
 .group:hover .group-hover\:text-\[var\(--text-primary\)\]{
   color: var(--text-primary);
+}
+.group:hover .group-hover\:opacity-80{
+  opacity: 0.8;
 }
 @media (min-width: 640px){
 

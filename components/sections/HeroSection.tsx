@@ -2,15 +2,8 @@
 
 import { useEffect, useRef, useState } from 'react'
 import Link from 'next/link'
-import Image from 'next/image'
 
 const SERVICES = ['Digital Products', 'Web Applications', 'UI/UX Design', 'IT Consulting', 'Brand Identity', 'E-Commerce']
-
-const STATS = [
-  { value: '500+', label: 'Projects Delivered' },
-  { value: '600+', label: 'Clients Satisfied' },
-  { value: '1000+', label: 'Expert Consultations' },
-]
 
 export default function HeroSection() {
   const [mounted, setMounted] = useState(false)
@@ -65,7 +58,6 @@ export default function HeroSection() {
         <div className="absolute top-0 left-[18%] w-px h-full bg-gradient-to-b from-transparent via-[var(--border)] to-transparent" />
         <div className="absolute top-0 right-[18%] w-px h-full bg-gradient-to-b from-transparent via-[var(--border)] to-transparent" />
         <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[var(--border)] to-transparent" />
-        {/* radial glows */}
         <div className="absolute top-20 left-10 w-[500px] h-[500px] rounded-full"
           style={{ background: 'radial-gradient(circle, var(--glow) 0%, transparent 70%)' }} />
         <div className="absolute bottom-0 right-0 w-[600px] h-[600px] rounded-full pointer-events-none"
@@ -127,17 +119,6 @@ export default function HeroSection() {
                 View Our Work
               </Link>
             </div>
-
-            {/* Stats */}
-            <div className="flex flex-wrap gap-0 border border-[var(--border)]">
-              {STATS.map((stat, i) => (
-                <div key={stat.label}
-                  className={`flex-1 min-w-[110px] px-5 py-4 ${i < STATS.length - 1 ? 'border-r border-[var(--border)]' : ''}`}>
-                  <div className="font-poppins font-bold text-[var(--text-primary)] text-2xl md:text-3xl leading-none mb-1">{stat.value}</div>
-                  <div className="font-hind text-[var(--text-secondary)] text-xs tracking-wide">{stat.label}</div>
-                </div>
-              ))}
-            </div>
           </div>
 
           {/* RIGHT — Rich visual panel */}
@@ -145,8 +126,7 @@ export default function HeroSection() {
             <div className="relative w-full max-w-[380px] xl:max-w-[420px]">
 
               {/* Main card — dashboard mockup */}
-              <div className="relative bg-[var(--bg-card)] border border-[var(--border)] overflow-hidden"
-                style={{ borderRadius: 0 }}>
+              <div className="relative bg-[var(--bg-card)] border border-[var(--border)] overflow-hidden">
                 {/* Browser chrome bar */}
                 <div className="flex items-center gap-2 px-4 py-3 border-b border-[var(--border)] bg-[var(--bg-subtle)]">
                   <div className="flex gap-1.5">
@@ -161,7 +141,6 @@ export default function HeroSection() {
 
                 {/* Mockup content */}
                 <div className="p-5">
-                  {/* Nav bar mockup */}
                   <div className="flex items-center justify-between mb-5 pb-3 border-b border-[var(--border)]">
                     <div className="flex items-center gap-2">
                       <div className="w-5 h-5 bg-[var(--text-primary)]" />
@@ -174,7 +153,6 @@ export default function HeroSection() {
                     </div>
                   </div>
 
-                  {/* Hero block mockup */}
                   <div className="mb-5">
                     <div className="w-3/4 h-4 bg-[var(--text-primary)]/25 rounded-sm mb-2" />
                     <div className="w-1/2 h-3 bg-[var(--text-secondary)]/40 rounded-sm mb-3" />
@@ -186,9 +164,8 @@ export default function HeroSection() {
                     </div>
                   </div>
 
-                  {/* Stats row mockup */}
                   <div className="grid grid-cols-3 gap-2 mb-4">
-                    {['500+', '600+', '1k+'].map((n) => (
+                    {['UI/UX', 'Dev', 'Brand'].map((n) => (
                       <div key={n} className="border border-[var(--border)] p-2 text-center">
                         <div className="font-poppins font-bold text-[var(--text-primary)] text-xs mb-1">{n}</div>
                         <div className="w-full h-1.5 bg-[var(--text-secondary)]/30 rounded-sm" />
@@ -196,7 +173,6 @@ export default function HeroSection() {
                     ))}
                   </div>
 
-                  {/* Services grid mockup */}
                   <div className="grid grid-cols-2 gap-2">
                     {[1,2,3,4].map((i) => (
                       <div key={i} className="border border-[var(--border)] p-2.5">
@@ -214,23 +190,10 @@ export default function HeroSection() {
               </div>
 
               {/* ── Floating badge cards ── */}
-              <div className="absolute -left-14 top-[18%] bg-[var(--bg)] border border-[var(--border)] px-3.5 py-2.5 shadow-2xl z-10"
-                style={{ animation: 'float 6s ease-in-out infinite' }}>
-                <div className="flex items-center gap-2.5">
-                  <div className="w-7 h-7 bg-[var(--text-primary)]/08 border border-[var(--border)] flex items-center justify-center flex-shrink-0">
-                    <svg className="w-3.5 h-3.5 text-[var(--text-primary)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                    </svg>
-                  </div>
-                  <div>
-                    <div className="font-poppins font-semibold text-[var(--text-primary)] text-xs">500+ Projects</div>
-                    <div className="font-hind text-[var(--text-secondary)] text-[10px]">Successfully delivered</div>
-                  </div>
-                </div>
-              </div>
 
-              <div className="absolute -right-12 top-[45%] bg-[var(--bg)] border border-[var(--border)] px-3.5 py-2.5 shadow-2xl z-10"
-                style={{ animation: 'float 7s ease-in-out infinite', animationDelay: '1.5s' }}>
+              {/* Card 1 — Shei Hoise (kept) */}
+              <div className="absolute -right-12 top-[12%] bg-[var(--bg)] border border-[var(--border)] px-3.5 py-2.5 shadow-2xl z-10"
+                style={{ animation: 'float 7s ease-in-out infinite', animationDelay: '0s' }}>
                 <div className="flex items-center gap-2.5">
                   <div className="w-7 h-7 bg-[var(--text-primary)] flex items-center justify-center flex-shrink-0">
                     <span className="font-poppins font-black text-[var(--bg)] text-[10px]">S</span>
@@ -242,17 +205,36 @@ export default function HeroSection() {
                 </div>
               </div>
 
-              <div className="absolute -left-10 bottom-[15%] bg-[var(--bg)] border border-[var(--border)] px-3.5 py-2.5 shadow-2xl z-10"
-                style={{ animation: 'float 5s ease-in-out infinite', animationDelay: '0.8s' }}>
+              {/* Card 2 — Est. 2020 / Founded */}
+              <div className="absolute -left-14 top-[40%] bg-[var(--bg)] border border-[var(--border)] px-3.5 py-2.5 shadow-2xl z-10"
+                style={{ animation: 'float 6s ease-in-out infinite', animationDelay: '1s' }}>
                 <div className="flex items-center gap-2.5">
                   <div className="w-7 h-7 bg-[var(--text-primary)]/08 border border-[var(--border)] flex items-center justify-center flex-shrink-0">
-                    <svg className="w-3.5 h-3.5 text-[var(--gray)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+                    {/* Calendar icon */}
+                    <svg className="w-3.5 h-3.5 text-[var(--text-primary)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                     </svg>
                   </div>
                   <div>
-                    <div className="font-poppins font-semibold text-[var(--text-primary)] text-xs">600+ Clients</div>
-                    <div className="font-hind text-[var(--text-secondary)] text-[10px]">Worldwide</div>
+                    <div className="font-poppins font-semibold text-[var(--text-primary)] text-xs">Est. July 2020</div>
+                    <div className="font-hind text-[var(--text-secondary)] text-[10px]">Built to last</div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Card 3 — 7-day free trial / product CTA */}
+              <div className="absolute -left-10 bottom-[14%] bg-[var(--bg)] border border-[var(--border)] px-3.5 py-2.5 shadow-2xl z-10"
+                style={{ animation: 'float 5s ease-in-out infinite', animationDelay: '1.8s' }}>
+                <div className="flex items-center gap-2.5">
+                  <div className="w-7 h-7 bg-[var(--text-primary)]/08 border border-[var(--border)] flex items-center justify-center flex-shrink-0">
+                    {/* Sparkle / star icon */}
+                    <svg className="w-3.5 h-3.5 text-[var(--gray)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 3l1.5 4.5L11 9l-4.5 1.5L5 15l-1.5-4.5L-1 9l4.5-1.5L5 3zM19 11l1 3 3 1-3 1-1 3-1-3-3-1 3-1 1-3z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <div className="font-poppins font-semibold text-[var(--text-primary)] text-xs">7-Day Free Trial</div>
+                    <div className="font-hind text-[var(--text-secondary)] text-[10px]">No credit card needed</div>
                   </div>
                 </div>
               </div>
@@ -281,12 +263,6 @@ export default function HeroSection() {
             </span>
           ))}
         </div>
-      </div>
-
-      {/* Scroll indicator */}
-      <div className="absolute bottom-16 left-1/2 -translate-x-1/2 hidden md:flex flex-col items-center gap-2 z-10">
-        <span className="font-hind text-[var(--text-secondary)]/60 text-[9px] tracking-[0.35em] uppercase">Scroll</span>
-        <div className="w-px h-7" style={{ background: 'linear-gradient(to bottom, var(--text-muted), transparent)' }} />
       </div>
     </section>
   )
