@@ -63,8 +63,8 @@ export default function ProductsSection() {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                     </svg>
                   </a>
-                  <a href="https://www.sheihoise.com/#request-demo" target="_blank" rel="noopener noreferrer"
-                    className="btn-outline px-6 py-3 text-sm">Request Demo</a>
+                  <a href="https://www.sheihoise.com/onboarding" target="_blank" rel="noopener noreferrer"
+                    className="btn-outline px-6 py-3 text-sm">Let's Onbaord</a>
                 </div>
                 <div className="flex flex-wrap gap-4">
                   {['7-day free trial', 'No credit card', 'Cancel anytime'].map((t) => (
@@ -151,12 +151,12 @@ export default function ProductsSection() {
         </AnimatedSection>
 
         {/* More coming */}
-        <AnimatedSection delay={200} className="mt-5">
+        {/* <AnimatedSection delay={200} className="mt-5">
           <div className="border border-dashed border-[var(--border)] p-8 text-center">
             <p className="font-hind text-[var(--text-secondary)] text-sm mb-1 tracking-widest uppercase">More coming soon</p>
             <p className="font-poppins font-medium text-[var(--gray)] text-lg">The MIANS product suite is growing.</p>
           </div>
-        </AnimatedSection>
+        </AnimatedSection> */}
       </div>
     </section>
   )
