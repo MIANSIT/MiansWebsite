@@ -54,8 +54,8 @@ export default function AboutSection() {
                   style={{ filter: 'grayscale(30%) brightness(0.6)' }}
                 />
                 <div className="bg-[var(--bg-card)] px-3 py-2 border-t border-[var(--border)]">
-                  <p className="font-poppins font-semibold text-[var(--text-primary)] text-xs">600+ Clients</p>
-                  <p className="font-hind text-[var(--text-secondary)] text-[10px]">Worldwide trust</p>
+                  <p className="font-poppins font-semibold text-[var(--text-primary)] text-xs">Global Reach</p>
+                  <p className="font-hind text-[var(--text-secondary)] text-[10px]">BD · Belgium · USA</p>
                 </div>
               </div>
 
