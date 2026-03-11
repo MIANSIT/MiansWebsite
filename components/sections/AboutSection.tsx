@@ -2,11 +2,11 @@
 import AnimatedSection from '@/components/AnimatedSection'
 
 const timeline = [
-  { year: '2020', event: 'MIANS Founded — July 20th, 2020' },
-  { year: '2021', event: 'First 50 clients onboarded globally' },
-  { year: '2022', event: 'Expanded into UI/UX & Branding services' },
-  { year: '2023', event: '500+ projects delivered worldwide' },
-  { year: '2024', event: 'Launched Shei Hoise — our first SaaS product' },
+  { year: '2020', event: 'MIANS founded — July 20th, 2020. Started with a vision to bridge business and digital.' },
+  { year: '2021', event: 'First international clients onboarded — working with businesses in Belgium and the USA.' },
+  { year: '2022', event: 'Completed brand identities for MIANS and PawfectBD — sharpening our design craft.' },
+  { year: '2023', event: 'Managed corporate, community, and gaming events across Bangladesh.' },
+  { year: '2024', event: 'Launched Shei Hoise — our first SaaS product. A store management platform built in-house.' },
 ]
 
 export default function AboutSection() {
@@ -84,7 +84,7 @@ export default function AboutSection() {
               We&apos;re proud to create the <span className="text-[var(--gray)]">Reflection of Your Desires</span> — crafting visions into scalable digital assets, helping you achieve goals with precision and creativity. From startups to enterprises, we partner to build products that make real impact.
             </p>
 
-            {/* Timeline */}
+            {/* Timeline — only this section was updated */}
             <div className="mb-8">
               <p className="font-hind text-[var(--text-secondary)] text-xs uppercase tracking-widest mb-4">Our Journey</p>
               <div className="relative">
@@ -131,6 +131,7 @@ export default function AboutSection() {
               ))}
             </div>
           </AnimatedSection>
+
         </div>
       </div>
     </section>
