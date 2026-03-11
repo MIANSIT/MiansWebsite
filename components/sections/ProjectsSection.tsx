@@ -11,7 +11,7 @@ const projects = [
     longDesc: 'A powerful SaaS platform to help store owners run their business smarter — inventory, orders, and analytics in one place. 7-day free trial, no credit card required.',
     tags: ['Next.js', 'React', 'SaaS', 'Tailwind'],
     href: 'https://www.sheihoise.com/',
-    image: '/images/SheiHoise2.png?w=600&q=80&fit=crop',
+    image: '/images/sheiHoise.png?w=600&q=80&fit=crop',
     local: true,
     category: 'SaaS',
   },
