@@ -20,7 +20,7 @@ export default function CTASection() {
           alt=""
           aria-hidden
           className="w-full h-full object-cover"
-          style={{ filter: 'grayscale(100%) brightness(0.55)' }}
+          style={{ filter: 'grayscale(20%) brightness(0.55)' }}
         />
         {/* Hardcoded dark gradient — never affected by light mode */}
         <div className="absolute inset-0" style={{ background: 'linear-gradient(to bottom, #090909, transparent 30%, transparent 70%, #090909)' }} />

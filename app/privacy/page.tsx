@@ -95,7 +95,7 @@ We are not responsible for their privacy practices.`,
     title: 'Contact Us',
     content: `If you have any questions:
 
-Email: hello@miansofficial.com  
+Email: miansofficial@gmail.com  
 Website: https://www.miansofficial.com/contact`,
   },
 ]
