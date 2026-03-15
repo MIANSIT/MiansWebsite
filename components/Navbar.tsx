@@ -8,12 +8,12 @@ import ThemeToggle from "./ThemeToggle";
 import { useTheme } from "./ThemeProvider";
 
 const navLinks = [
-  { label: "01 Home", href: "/" },
-  { label: "02 About", href: "/about" },
-  { label: "03 Services", href: "/services" },
-  { label: "04 Projects", href: "/#projects" },
-  { label: "05 Blog", href: "/blog" },
-  { label: "06 Contact", href: "/contact" },
+  { label: "Home", href: "/" },
+  { label: "Projects", href: "/#projects" },
+  { label: "Product", href: "/#products" },
+  { label: "Services", href: "/#services" },
+  { label: "About", href: "/#about" },
+  { label: "Contact", href: "/contact" },
 ];
 
 export default function Navbar() {
