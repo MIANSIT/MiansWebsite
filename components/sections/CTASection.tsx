@@ -20,7 +20,7 @@ export default function CTASection() {
           alt=""
           aria-hidden
           className="w-full h-full object-cover"
-          style={{ filter: 'grayscale(20%) brightness(0.55)' }}
+          style={{ filter: 'grayscale(20%) brightness(0.35)' }}
         />
         {/* Hardcoded dark gradient — never affected by light mode */}
         <div className="absolute inset-0" style={{ background: 'linear-gradient(to bottom, #090909, transparent 30%, transparent 70%, #090909)' }} />
@@ -90,17 +90,16 @@ export default function CTASection() {
             </a>
           </div>
 
-          {/* Trust bar */}
+          {/* Trust bar - Fixed visibility */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             {TRUST.map((item) => (
-              <div key={item.label} className="flex flex-col items-center gap-2">
-                <div className="w-10 h-10 flex items-center justify-center transition-all duration-300 hover:border-[#8a8a9e]" 
-                  style={{ border: '1px solid #1e1e3a', color: '#8a8a9e' }}>
-                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d={item.d} />
+              <div key={item.label} className="flex flex-col items-center gap-3">
+                <div className="w-12 h-12 rounded-full flex items-center justify-center transition-all duration-300 bg-[#1a1a2a] hover:bg-[#2a2a3a] group">
+                  <svg className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth={1.5} viewBox="0 0 24 24" style={{ color: '#FAFEFF' }}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d={item.d} />
                   </svg>
                 </div>
-                <span className="font-hind text-xs text-center" style={{ color: '#8a8a9e' }}>{item.label}</span>
+                <span className="font-hind text-sm font-medium text-center" style={{ color: '#FAFEFF' }}>{item.label}</span>
               </div>
             ))}
           </div>

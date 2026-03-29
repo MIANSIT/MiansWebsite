@@ -6,7 +6,7 @@ const timeline = [
   { year: '2021', event: 'First international clients onboarded — working with businesses in Belgium and the USA.' },
   { year: '2022', event: 'Completed brand identities for MIANS and PawfectBD — sharpening our design craft.' },
   { year: '2023', event: 'Managed corporate, community, and gaming events across Bangladesh.' },
-  { year: '2024', event: 'Launched Shei Hoise — our first SaaS product. A store management platform built in-house.' },
+  { year: '2025', event: 'Launched Shei Hoise — our first SaaS product. A store management platform built in-house.' },
 ]
 
 export default function AboutSection() {
