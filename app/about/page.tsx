@@ -46,7 +46,7 @@ const timeline = [
     event: "Managed corporate, community, and gaming events across Bangladesh.",
   },
   {
-    year: "2024",
+    year: "2025",
     title: "Shei Hoise Launch",
     event:
       "Launched Shei Hoise — our first SaaS product. A store management platform built in-house.",
