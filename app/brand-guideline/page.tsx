@@ -350,7 +350,7 @@ export default function BrandGuidelinePage() {
               >
                 {/* Stylised M lettermark matching brand */}
                 <path
-                  d="M8 44 L8 18 L21 36 L30 22 L39 36 L52 18 L52 44"
+                  d="M10 46 L10 14 L30 32 L50 14 L50 46"
                   stroke="var(--text-primary)"
                   strokeWidth="3.5"
                   strokeLinecap="round"

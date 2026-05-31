@@ -12,6 +12,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "deployment",
   ];
 
+  const caseStudySlugs = [
+    "shei-hoise",
+    "daatti-home-collection",
+    "luxury-chauffeur-car",
+    "priority-carpet-clean",
+  ];
+
   const blogPosts = [
     "why-your-business-needs-a-custom-website",
     "the-roi-of-good-ui-ux-design",
@@ -40,6 +47,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.9,
     },
+    {
+      url: `${baseUrl}/case-studies`,
+      lastModified: new Date(),
+      changeFrequency: "monthly" as const,
+      priority: 0.9,
+    },
+    ...caseStudySlugs.map((slug) => ({
+      url: `${baseUrl}/case-studies/${slug}`,
+      lastModified: new Date(),
+      changeFrequency: "monthly" as const,
+      priority: 0.8,
+    })),
     ...services.map((slug) => ({
       url: `${baseUrl}/services/${slug}`,
       lastModified: new Date(),

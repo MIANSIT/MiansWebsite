@@ -9,6 +9,7 @@ import ExpertiseSection from "@/components/sections/ExpertiseSection";
 import AboutSection from "@/components/sections/AboutSection";
 import TestimonialsSection from "@/components/sections/TestimonialsSection";
 import CTASection from "@/components/sections/CTASection";
+import CaseStudiesSection from "@/components/sections/CaseStudiesSection";
 
 export const metadata: Metadata = {
   title: "MIANS — Reflection of Your Desires | Digital Agency",
@@ -35,6 +36,7 @@ export default function Home() {
       <HeroSection />
       <ProjectsSection />
       <ProductsSection />
+      <CaseStudiesSection />
       <ServicesSection />
       <ExpertiseSection />
       <AboutSection />

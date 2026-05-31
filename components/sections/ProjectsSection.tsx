@@ -76,10 +76,30 @@ const projects = [
     local: false,
     category: 'AI',
   },
+  {
+    title: 'Luxury Chauffeur Car',
+    description: 'Premium Car Booking Platform — Australia',
+    longDesc: 'A high-end chauffeur booking platform built for an Australian client — featuring real-time flight tracking, luxury fleet selection (Mercedes, BMW, Audi), fixed transparent pricing, and 24/7 dispatch across Australia.',
+    tags: ['Next.js', 'Booking System', 'Real-time', 'Tailwind'],
+    href: 'https://luxurychauffeurcar.com.au/',
+    image: '/images/luxurychauffeur.jpg?w=600&q=80&fit=crop',
+    local: false,
+    category: 'Transport',
+  },
+  {
+    title: 'Priority Carpet Clean',
+    description: 'Carpet Cleaning Service with Online Booking — USA',
+    longDesc: 'A professional cleaning service website for a US-based client with a fully integrated custom booking system, service catalog covering carpets, tile, hardwood & upholstery, and customer review integration.',
+    tags: ['WordPress', 'Custom Booking', 'PHP', 'CSS3'],
+    href: 'https://prioritycarpetclean.com/',
+    image: '/images/prioritycarpet.jpg?w=600&q=80&fit=crop',
+    local: false,
+    category: 'Home Services',
+  },
 ]
 
 const ALL = 'All'
-const categories = [ALL, 'SaaS', 'E-Commerce', 'Doctors', 'Restaurant', 'Media', 'Non-profit', 'AI', 'Brand Guideline']
+const categories = [ALL, 'SaaS', 'E-Commerce', 'Transport', 'Home Services', 'Restaurant', 'Media', 'Non-profit', 'AI', 'Brand Guideline']
 
 export default function ProjectsSection() {
   const [active, setActive] = useState(ALL)
