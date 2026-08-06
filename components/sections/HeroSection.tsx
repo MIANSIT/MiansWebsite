@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from 'react'
 import Link from 'next/link'
 
-const SERVICES = ['Digital Products', 'Web Applications', 'UI/UX Design', 'IT Consulting', 'Brand Identity', 'E-Commerce']
+const SERVICES = ['MVPs', 'SaaS Platforms', 'Booking Systems', 'Dashboards', 'APIs & Backends', 'Internal Tools']
 
 export default function HeroSection() {
   const [mounted, setMounted] = useState(false)
@@ -77,18 +77,18 @@ export default function HeroSection() {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[var(--text-primary)] opacity-60" />
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-[var(--text-primary)]" />
               </span>
-              <span className="font-hind text-[10px] text-[var(--gray)] tracking-[0.22em] uppercase">Digital Agency · Est. 2020</span>
+              <span className="font-hind text-[10px] text-[var(--gray)] tracking-[0.22em] uppercase">Full-Stack Product Development · Est. 2020</span>
             </div>
 
             {/* Headline */}
             <div className="mb-7">
               <p className="font-poppins font-black text-[var(--text-primary)] leading-[1.0] mb-1"
                 style={{ fontSize: 'clamp(2.6rem, 5.5vw, 5.2rem)' }}>
-                We craft
+                From idea
               </p>
               <p className="font-poppins font-black text-[var(--text-secondary)] leading-[1.0] mb-3"
                 style={{ fontSize: 'clamp(2.6rem, 5.5vw, 5.2rem)' }}>
-                world&#8209;class
+                to production
               </p>
               <div className="border border-[var(--border-strong)] px-4 py-2 inline-flex items-center gap-0 min-w-[2ch]"
                 style={{ minHeight: 'clamp(3.2rem, 7vw, 6rem)' }}>
@@ -104,7 +104,7 @@ export default function HeroSection() {
             {/* Description */}
             <p className="font-hind text-[var(--text-secondary)] leading-relaxed mb-8 max-w-lg"
               style={{ fontSize: 'clamp(0.95rem, 1.4vw, 1.08rem)' }}>
-              We don&apos;t just develop solutions — we craft experiences that reflect your visions. Creativity, technical expertise, and a deep understanding of your goals, blended into one.
+              We&apos;re the full-stack team founders call when they need a real application built, not just a marketing site. Next.js, NestJS, and solid architecture, from first commit to production.
             </p>
 
             {/* CTAs */}
@@ -259,7 +259,7 @@ export default function HeroSection() {
         <div className="flex whitespace-nowrap animate-marquee">
           {Array.from({ length: 8 }).map((_, i) => (
             <span key={i} className="font-hind text-[var(--text-secondary)] text-xs tracking-widest uppercase px-5">
-              Web Development &nbsp;·&nbsp; UI/UX Design &nbsp;·&nbsp; IT Consulting &nbsp;·&nbsp; Branding &nbsp;·&nbsp; E-Commerce &nbsp;·&nbsp; Lead Generation &nbsp;·&nbsp; Custom Apps &nbsp;·&nbsp;
+              Product Strategy &nbsp;·&nbsp; Architecture &nbsp;·&nbsp; Development &nbsp;·&nbsp; Deployment &nbsp;·&nbsp; Scaling &nbsp;·&nbsp; Support &nbsp;·&nbsp;
             </span>
           ))}
         </div>

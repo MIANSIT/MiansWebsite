@@ -3,6 +3,8 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import HeroSection from "@/components/sections/HeroSection";
 import ServicesSection from "@/components/sections/ServicesSection";
+import ProductDevelopmentSection from "@/components/sections/ProductDevelopmentSection";
+import EngagementModelsSection from "@/components/sections/EngagementModelsSection";
 import ProductsSection from "@/components/sections/ProductsSection";
 import ProjectsSection from "@/components/sections/ProjectsSection";
 import ExpertiseSection from "@/components/sections/ExpertiseSection";
@@ -12,20 +14,20 @@ import CTASection from "@/components/sections/CTASection";
 import CaseStudiesSection from "@/components/sections/CaseStudiesSection";
 
 export const metadata: Metadata = {
-  title: "MIANS — Reflection of Your Desires | Digital Agency",
+  title: "MIANS — Full-Stack Product Development for Founders & Teams",
   description:
-    "MIANS is a full-service digital agency specializing in custom web & app development, UI/UX design, IT consulting, branding, and e-commerce solutions.",
+    "MIANS builds full-stack applications for founders and teams who need to ship — not just launch a website. Next.js, NestJS, PostgreSQL/MongoDB, Docker. Home of Shei Hoise, our own SaaS product.",
   alternates: { canonical: "/" },
   openGraph: {
-    title: "MIANS — Reflection of Your Desires | Digital Agency",
+    title: "MIANS — Full-Stack Product Development for Founders & Teams",
     description:
-      "Custom web & app development, UI/UX design, IT consulting, branding, and e-commerce solutions. Let's build something remarkable.",
+      "MIANS builds full-stack applications for founders and teams who need to ship — not just launch a website. Next.js, NestJS, PostgreSQL/MongoDB, Docker. Home of Shei Hoise, our own SaaS product.",
     url: "/",
   },
   twitter: {
-    title: "MIANS — Reflection of Your Desires | Digital Agency",
+    title: "MIANS — Full-Stack Product Development for Founders & Teams",
     description:
-      "Custom web & app development, UI/UX design, IT consulting, branding, and e-commerce solutions.",
+      "MIANS builds full-stack applications for founders and teams who need to ship — not just launch a website. Next.js, NestJS, PostgreSQL/MongoDB, Docker.",
   },
 };
 
@@ -34,12 +36,14 @@ export default function Home() {
     <main style={{ background: "var(--bg)" }}>
       <Navbar />
       <HeroSection />
-      <ProjectsSection />
       <ProductsSection />
       <CaseStudiesSection />
+      <ProductDevelopmentSection />
+      <EngagementModelsSection />
       <ServicesSection />
       <ExpertiseSection />
       <AboutSection />
+      <ProjectsSection />
       <TestimonialsSection />
       <CTASection />
       <Footer />

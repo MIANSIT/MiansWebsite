@@ -113,15 +113,15 @@ export default function ProjectsSection() {
         <AnimatedSection className="mb-10">
           <div className="flex items-center gap-3 mb-4">
             <span className="section-line" />
-            <span className="font-hind text-[var(--text-secondary)] text-sm tracking-widest uppercase">Portfolio</span>
+            <span className="font-hind text-[var(--text-secondary)] text-sm tracking-widest uppercase">Range of Work</span>
           </div>
           <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6">
             <h2 className="font-poppins font-bold text-4xl lg:text-5xl text-[var(--text-primary)] leading-tight">
-              World-class digital products,<br />
-              <span className="text-[var(--text-secondary)]">from ideas to execution</span>
+              Beyond Product Builds,<br />
+              <span className="text-[var(--text-secondary)]">Across Industries</span>
             </h2>
             <p className="font-hind text-[var(--text-secondary)] max-w-sm leading-relaxed">
-              A selection of real projects built for real clients — each one a reflection of our commitment to craft.
+              From SaaS platforms to booking systems and community sites — a look at the range of work we&apos;ve delivered for clients over the years.
             </p>
           </div>
         </AnimatedSection>

@@ -19,35 +19,34 @@ const hind = Hind({
 const SITE_URL = "https://www.miansofficial.com";
 const SITE_NAME = "MIANS";
 const DEFAULT_DESCRIPTION =
-  "MIANS is a full-service digital agency offering custom web & app development, UI/UX design, IT consulting, branding, and e-commerce solutions. Reflection of Your Desires.";
+  "MIANS is a full-stack product development studio — we build real applications for founders and teams, from idea to production. Next.js, NestJS, PostgreSQL/MongoDB, Docker.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "MIANS — Reflection of Your Desires | Digital Agency",
+    default: "MIANS — Full-Stack Product Development",
     template: "%s | MIANS",
   },
   description: DEFAULT_DESCRIPTION,
   keywords: [
     "MIANS",
     "MIANS official",
-    "digital agency",
+    "full-stack product development",
+    "product development studio",
     "web development",
     "app development",
-    "UI/UX design",
-    "IT consulting",
-    "branding",
-    "e-commerce",
+    "application development",
+    "MVP development",
+    "startup product team",
     "custom software",
     "digital transformation",
     "web applications",
-    "brand identity",
     "Next.js development",
+    "NestJS development",
     "React development",
     "SaaS development",
     "mobile app development",
     "booking system development",
-    "startup agency",
     "full-stack development",
     "custom booking platform",
     "restaurant website",
@@ -72,14 +71,14 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: SITE_URL,
     siteName: SITE_NAME,
-    title: "MIANS — Reflection of Your Desires | Digital Agency",
+    title: "MIANS — Full-Stack Product Development",
     description: DEFAULT_DESCRIPTION,
   },
   twitter: {
     card: "summary_large_image",
     site: "@mians_official",
     creator: "@mians_official",
-    title: "MIANS — Reflection of Your Desires | Digital Agency",
+    title: "MIANS — Full-Stack Product Development",
     description: DEFAULT_DESCRIPTION,
   },
   robots: {
@@ -137,8 +136,7 @@ export default function RootLayout({
           url: "https://www.miansofficial.com/logos/logo.svg",
         },
         foundingDate: "2020-07-20",
-        description:
-          "MIANS is a full-service digital agency offering custom web & app development, UI/UX design, IT consulting, branding, and e-commerce solutions.",
+        description: DEFAULT_DESCRIPTION,
         areaServed: "Worldwide",
         sameAs: [
           "https://www.linkedin.com/company/mians-official/",
@@ -152,7 +150,7 @@ export default function RootLayout({
         },
         hasOfferCatalog: {
           "@type": "OfferCatalog",
-          name: "Digital Agency Services",
+          name: "Product Development Services",
           itemListElement: [
             { "@type": "Offer", itemOffered: { "@type": "Service", name: "Custom Web Development" } },
             { "@type": "Offer", itemOffered: { "@type": "Service", name: "Mobile App Development" } },

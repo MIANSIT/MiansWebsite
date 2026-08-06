@@ -14,12 +14,15 @@ export default function ProductsSection() {
         <AnimatedSection className="mb-14">
           <div className="flex items-center gap-3 mb-4">
             <span className="section-line" />
-            <span className="font-hind text-[var(--text-secondary)] text-sm tracking-widest uppercase">Our Products</span>
+            <span className="font-hind text-[var(--text-secondary)] text-sm tracking-widest uppercase">Built &amp; Run by MIANS</span>
           </div>
-          <h2 className="font-poppins font-bold text-4xl lg:text-5xl text-[var(--text-primary)] leading-tight">
+          <h2 className="font-poppins font-bold text-4xl lg:text-5xl text-[var(--text-primary)] leading-tight mb-4">
             Built by MIANS.<br />
             <span className="text-[var(--text-secondary)]">Launched for the World.</span>
           </h2>
+          <p className="font-hind text-[var(--text-secondary)] max-w-xl leading-relaxed">
+            Not a client project — this is our own product. We designed it, built it, and we run it, end to end. It&apos;s the clearest proof of how we build.
+          </p>
         </AnimatedSection>
 
         {/* Shei Hoise Card */}
@@ -33,7 +36,7 @@ export default function ProductsSection() {
                     <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[var(--text-primary)] opacity-60" />
                     <span className="relative inline-flex rounded-full h-1.5 w-1.5 bg-[var(--text-primary)]" />
                   </span>
-                  <span className="font-hind text-[var(--text-primary)] text-[10px] tracking-[0.2em] uppercase font-medium">Live — Our First Product</span>
+                  <span className="font-hind text-[var(--text-primary)] text-[10px] tracking-[0.2em] uppercase font-medium">Live — Built &amp; Run by Us</span>
                 </div>
 
                 <h3 className="font-poppins font-bold text-3xl lg:text-4xl text-[var(--text-primary)] mb-2">

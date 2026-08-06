@@ -1,7 +1,7 @@
 import { ImageResponse } from "next/og";
 
 export const runtime = "edge";
-export const alt = "MIANS — Full-Service Digital Agency";
+export const alt = "MIANS — Full-Stack Product Development";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -112,7 +112,7 @@ export default function OGImage() {
             textTransform: "uppercase" as const,
           }}
         >
-          Reflection of Your Desires
+          Full-Stack Product Development
         </div>
         <div
           style={{
@@ -125,13 +125,13 @@ export default function OGImage() {
             textTransform: "uppercase" as const,
           }}
         >
-          <span>Web Development</span>
+          <span>Next.js</span>
           <span>·</span>
-          <span>UI/UX Design</span>
+          <span>NestJS</span>
           <span>·</span>
-          <span>IT Consulting</span>
+          <span>Docker</span>
           <span>·</span>
-          <span>Branding</span>
+          <span>CI/CD</span>
         </div>
       </div>
 
