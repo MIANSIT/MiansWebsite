@@ -14,7 +14,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const caseStudySlugs = [
     "shei-hoise",
-    "daatti-home-collection",
+    "multivendor-marketplace-platform",
     "luxury-chauffeur-car",
     "priority-carpet-clean",
   ];
