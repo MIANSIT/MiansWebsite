@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { Menu, X } from "lucide-react";
+import { Download, Menu, X } from "lucide-react";
 import ThemeToggle from "./ThemeToggle";
 import { useTheme } from "./ThemeProvider";
 
@@ -17,6 +17,8 @@ const navLinks = [
   { label: "Brand", href: "/brand-guideline" },
   { label: "Contact", href: "/contact" },
 ];
+
+const profilePdf = "/assets/mians-company-profile.pdf";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -73,6 +75,16 @@ export default function Navbar() {
         {/* Right side */}
         <div className='flex items-center gap-3'>
           <ThemeToggle />
+          <a
+            href={profilePdf}
+            download
+            aria-label='Download company profile (PDF)'
+            title='Download company profile (PDF)'
+            className='hidden lg:inline-flex btn-outline gap-2 px-3 xl:px-4 py-2.5 text-sm'
+          >
+            <Download size={16} aria-hidden />
+            <span className='hidden xl:inline'>Company Profile</span>
+          </a>
           <Link
             href='/contact'
             className='hidden lg:inline-flex btn-primary px-5 py-2.5 text-sm'
@@ -92,7 +104,7 @@ export default function Navbar() {
 
       {/* Mobile menu */}
       <div
-        className={`lg:hidden overflow-hidden transition-all duration-300 ${open ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"}`}
+        className={`lg:hidden overflow-hidden transition-all duration-300 ${open ? "max-h-[600px] opacity-100" : "max-h-0 opacity-0"}`}
       >
         <nav
           className='flex flex-col px-6 pb-6 pt-4 border-t'
@@ -109,10 +121,19 @@ export default function Navbar() {
               {link.label}
             </Link>
           ))}
+          <a
+            href={profilePdf}
+            download
+            onClick={() => setOpen(false)}
+            className='btn-outline justify-center gap-2 mt-5 px-6 py-3 text-sm'
+          >
+            <Download size={16} aria-hidden />
+            Company Profile (PDF)
+          </a>
           <Link
             href='/contact'
             onClick={() => setOpen(false)}
-            className='btn-primary mt-5 px-6 py-3 text-sm text-center'
+            className='btn-primary mt-3 px-6 py-3 text-sm text-center'
           >
             Start a Project
           </Link>
