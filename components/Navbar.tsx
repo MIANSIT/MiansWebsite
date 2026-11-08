@@ -80,14 +80,14 @@ export default function Navbar() {
             download
             aria-label='Download company profile (PDF)'
             title='Download company profile (PDF)'
-            className='hidden lg:inline-flex btn-outline gap-2 px-3 xl:px-4 py-2.5 text-sm'
+            className='!hidden lg:!inline-flex btn-outline gap-2 px-3 xl:px-4 py-2.5 text-sm'
           >
             <Download size={16} aria-hidden />
             <span className='hidden xl:inline'>Company Profile</span>
           </a>
           <Link
             href='/contact'
-            className='hidden lg:inline-flex btn-primary px-5 py-2.5 text-sm'
+            className='!hidden lg:!inline-flex btn-primary px-5 py-2.5 text-sm'
           >
             Start a Project
           </Link>
