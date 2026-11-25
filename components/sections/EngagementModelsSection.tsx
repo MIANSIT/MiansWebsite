@@ -24,15 +24,15 @@ const MODELS = [
 
 export default function EngagementModelsSection() {
   return (
-    <section id="engagement" className="py-24 lg:py-32 border-t" style={{ background: 'var(--bg-card)', borderColor: 'var(--border)' }}>
+    <section id="engagement" className="py-14 md:py-20 lg:py-24 border-t" style={{ background: 'var(--bg-card)', borderColor: 'var(--border)' }}>
       <div className="max-w-7xl mx-auto px-6">
-        <AnimatedSection className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+        <AnimatedSection className="flex flex-col md:flex-row md:items-end justify-between mb-8 md:mb-12 gap-6">
           <div>
             <div className="flex items-center gap-3 mb-4">
               <span className="section-line" />
               <span className="font-hind text-[var(--text-secondary)] text-sm tracking-widest uppercase">How We Work</span>
             </div>
-            <h2 className="font-poppins font-bold text-4xl lg:text-5xl text-[var(--text-primary)] leading-tight">
+            <h2 className="font-poppins font-bold text-3xl sm:text-4xl lg:text-5xl text-[var(--text-primary)] leading-tight">
               Ways to Work<br />With Us
             </h2>
           </div>
@@ -44,8 +44,8 @@ export default function EngagementModelsSection() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-px" style={{ background: 'var(--border)' }}>
           {MODELS.map((model, i) => (
             <AnimatedSection key={model.num} delay={i * 80}>
-              <div className="service-card p-8 h-full flex flex-col">
-                <span className="font-poppins font-light text-4xl leading-none select-none mb-6" style={{ color: 'var(--text-secondary)', opacity: 0.3 }}>
+              <div className="service-card p-6 md:p-8 h-full flex flex-col">
+                <span className="font-poppins font-light text-4xl leading-none select-none mb-4 md:mb-6" style={{ color: 'var(--text-secondary)', opacity: 0.3 }}>
                   {model.num}
                 </span>
                 <h3 className="font-poppins font-semibold text-[var(--text-primary)] text-lg mb-3">{model.title}</h3>

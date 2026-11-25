@@ -11,9 +11,9 @@ const timeline = [
 
 export default function AboutSection() {
   return (
-    <section id="about" className="py-24 lg:py-32 bg-[var(--bg)] overflow-hidden">
+    <section id="about" className="py-14 md:py-20 lg:py-24 bg-[var(--bg)] overflow-hidden">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-20 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
 
           {/* LEFT: Visual */}
           <AnimatedSection>
@@ -45,7 +45,7 @@ export default function AboutSection() {
               </div>
 
               {/* Secondary image — floating */}
-              <div className="absolute -bottom-8 -right-6 w-44 lg:w-52 border border-[var(--border)] overflow-hidden shadow-2xl"
+              <div className="absolute -bottom-8 -right-6 w-44 lg:w-52 hidden sm:block border border-[var(--border)] overflow-hidden shadow-2xl"
                 style={{ animation: 'float 7s ease-in-out infinite' }}>
                 <img
                   src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=400&q=80&fit=crop"
@@ -60,7 +60,7 @@ export default function AboutSection() {
               </div>
 
               {/* Stat badge */}
-              <div className="absolute -top-4 -left-4 bg-[var(--bg)] border border-[var(--border)] p-4 shadow-2xl">
+              <div className="absolute top-3 left-3 sm:-top-4 sm:-left-4 bg-[var(--bg)] border border-[var(--border)] p-3 sm:p-4 shadow-2xl">
                 <div className="font-poppins font-bold text-[var(--text-primary)] text-2xl leading-none">1000+</div>
                 <div className="font-hind text-[var(--text-secondary)] text-xs mt-0.5">Consultations</div>
               </div>
@@ -73,7 +73,7 @@ export default function AboutSection() {
               <span className="section-line" />
               <span className="font-hind text-[var(--text-secondary)] text-sm tracking-widest uppercase">About MIANS</span>
             </div>
-            <h2 className="font-poppins font-bold text-4xl lg:text-5xl text-[var(--text-primary)] leading-tight mb-5">
+            <h2 className="font-poppins font-bold text-3xl sm:text-4xl lg:text-5xl text-[var(--text-primary)] leading-tight mb-5">
               Bridging Innovation<br />and Business
             </h2>
             <p className="font-hind text-[var(--gray)] leading-relaxed mb-4">

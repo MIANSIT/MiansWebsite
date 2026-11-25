@@ -43,7 +43,7 @@ export default function HeroSection() {
   }, [mounted, isTyping, serviceIndex])
 
   return (
-    <section className="relative min-h-screen bg-[var(--bg)] overflow-hidden flex flex-col">
+    <section className="relative lg:min-h-screen bg-[var(--bg)] overflow-hidden flex flex-col">
 
       {/* ── BG: giant ghost text ── */}
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none select-none overflow-hidden" aria-hidden>
@@ -65,14 +65,14 @@ export default function HeroSection() {
       </div>
 
       {/* ── MAIN CONTENT ── */}
-      <div className="relative z-10 flex-1 max-w-7xl mx-auto w-full px-6 pt-28 pb-10 flex flex-col justify-center">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center min-h-[calc(100vh-8rem)]">
+      <div className="relative z-10 flex-1 max-w-7xl mx-auto w-full px-6 pt-24 pb-10 lg:pt-28 flex flex-col justify-center">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center lg:min-h-[calc(100vh-8rem)]">
 
           {/* LEFT */}
-          <div className="lg:col-span-7 flex flex-col justify-center py-10 lg:py-0">
+          <div className="lg:col-span-7 flex flex-col justify-center py-6 lg:py-0">
 
             {/* Badge */}
-            <div className="inline-flex items-center gap-2.5 mb-8 w-fit border border-[var(--border)] px-3.5 py-1.5">
+            <div className="inline-flex items-center gap-2.5 mb-6 lg:mb-8 w-fit border border-[var(--border)] px-3.5 py-1.5">
               <span className="relative flex h-2 w-2">
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[var(--text-primary)] opacity-60" />
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-[var(--text-primary)]" />
@@ -108,7 +108,7 @@ export default function HeroSection() {
             </p>
 
             {/* CTAs */}
-            <div className="flex flex-wrap gap-3 mb-10">
+            <div className="flex flex-wrap gap-3 lg:mb-10">
               <Link href="/contact" className="btn-primary inline-flex items-center gap-2 group px-6 py-3.5 text-sm font-semibold">
                 Begin Your Journey
                 <svg className="w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">

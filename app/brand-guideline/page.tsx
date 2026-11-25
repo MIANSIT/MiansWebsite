@@ -69,7 +69,7 @@ export default function BrandGuidelinePage() {
       <Navbar />
 
       {/* ── HERO ─────────────────────────────────────────── */}
-      <section className="pt-36 pb-24 px-6 relative overflow-hidden grid-bg">
+      <section className="pt-28 md:pt-36 pb-14 md:pb-20 px-6 relative overflow-hidden grid-bg">
         {/* decorative blobs */}
         <div
           aria-hidden
@@ -134,7 +134,7 @@ export default function BrandGuidelinePage() {
       {/* ── MISSION ──────────────────────────────────────── */}
       <section
         id="mission"
-        className="py-24 px-6 border-t"
+        className="py-14 md:py-20 px-6 border-t"
         style={{ borderColor: "var(--border)" }}
       >
         <div className="max-w-7xl mx-auto">
@@ -197,7 +197,7 @@ export default function BrandGuidelinePage() {
       {/* ── LOGO ─────────────────────────────────────────── */}
       <section
         id="logo"
-        className="py-24 px-6 border-t"
+        className="py-14 md:py-20 px-6 border-t"
         style={{
           borderColor: "var(--border)",
           background: "var(--bg-subtle)",
@@ -213,7 +213,7 @@ export default function BrandGuidelinePage() {
             Logo Construction
           </h2>
           <p
-            className="font-hind text-base max-w-2xl leading-relaxed mb-14"
+            className="font-hind text-base max-w-2xl leading-relaxed mb-8 md:mb-12"
             style={{ color: "var(--text-secondary)" }}
           >
             The logo contains one <strong>wordmark</strong> and one{" "}
@@ -425,7 +425,7 @@ export default function BrandGuidelinePage() {
       {/* ── COLORS ───────────────────────────────────────── */}
       <section
         id="colors"
-        className="py-24 px-6 border-t"
+        className="py-14 md:py-20 px-6 border-t"
         style={{ borderColor: "var(--border)" }}
       >
         <div className="max-w-7xl mx-auto">
@@ -438,7 +438,7 @@ export default function BrandGuidelinePage() {
             The Color Palette
           </h2>
           <p
-            className="font-hind text-base max-w-2xl leading-relaxed mb-14"
+            className="font-hind text-base max-w-2xl leading-relaxed mb-8 md:mb-12"
             style={{ color: "var(--text-secondary)" }}
           >
             Intentionally minimal — a tight palette keeps the brand visuals
@@ -558,7 +558,7 @@ export default function BrandGuidelinePage() {
       {/* ── TYPOGRAPHY ───────────────────────────────────── */}
       <section
         id="typography"
-        className="py-24 px-6 border-t"
+        className="py-14 md:py-20 px-6 border-t"
         style={{
           borderColor: "var(--border)",
           background: "var(--bg-subtle)",
@@ -574,7 +574,7 @@ export default function BrandGuidelinePage() {
             Typography — Fonts
           </h2>
           <p
-            className="font-hind text-base max-w-2xl leading-relaxed mb-14"
+            className="font-hind text-base max-w-2xl leading-relaxed mb-8 md:mb-12"
             style={{ color: "var(--text-secondary)" }}
           >
             Two complementary typefaces form the typographic system.{" "}
@@ -791,7 +791,7 @@ export default function BrandGuidelinePage() {
       {/* ── USAGE RULES ──────────────────────────────────── */}
       <section
         id="usage-rules"
-        className="py-24 px-6 border-t"
+        className="py-14 md:py-20 px-6 border-t"
         style={{ borderColor: "var(--border)" }}
       >
         <div className="max-w-7xl mx-auto">
@@ -804,7 +804,7 @@ export default function BrandGuidelinePage() {
             Logo — What to Avoid
           </h2>
           <p
-            className="font-hind text-base max-w-2xl leading-relaxed mb-14"
+            className="font-hind text-base max-w-2xl leading-relaxed mb-8 md:mb-12"
             style={{ color: "var(--text-secondary)" }}
           >
             To maintain the integrity of the brand, always use the approved logo
@@ -883,7 +883,7 @@ export default function BrandGuidelinePage() {
 
       {/* ── DOWNLOAD CTA ─────────────────────────────────── */}
       <section
-        className="py-24 px-6 border-t"
+        className="py-14 md:py-20 px-6 border-t"
         style={{
           borderColor: "var(--border)",
           background: "var(--bg-subtle)",

@@ -36,7 +36,7 @@ export default function BlogPage() {
       <Navbar />
 
       {/* Hero */}
-      <section className='pt-36 pb-16 px-6 relative overflow-hidden grid-bg'>
+      <section className='pt-28 md:pt-36 pb-10 md:pb-14 px-6 relative overflow-hidden grid-bg'>
         <div className='max-w-7xl mx-auto relative'>
           <div className='flex items-center gap-3 mb-5'>
             <span className='section-line' />
@@ -64,7 +64,7 @@ export default function BlogPage() {
       </section>
 
       {/* Blog Grid */}
-      <section className='py-20 px-6'>
+      <section className='py-14 md:py-20 px-6'>
         <div className='max-w-7xl mx-auto'>
           <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6'>
             {BLOG_POSTS.map((post) => (

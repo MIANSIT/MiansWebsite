@@ -30,14 +30,14 @@ const STACK = [
 
 export default function ProductDevelopmentSection() {
   return (
-    <section id="product-development" className="py-24 lg:py-32 border-t" style={{ background: 'var(--bg-subtle)', borderColor: 'var(--border)' }}>
+    <section id="product-development" className="py-14 md:py-20 lg:py-24 border-t" style={{ background: 'var(--bg-subtle)', borderColor: 'var(--border)' }}>
       <div className="max-w-7xl mx-auto px-6">
-        <AnimatedSection className="mb-16 max-w-3xl">
+        <AnimatedSection className="mb-8 md:mb-12 max-w-3xl">
           <div className="flex items-center gap-3 mb-4">
             <span className="section-line" />
             <span className="font-hind text-[var(--text-secondary)] text-sm tracking-widest uppercase">How We Build</span>
           </div>
-          <h2 className="font-poppins font-bold text-4xl lg:text-5xl text-[var(--text-primary)] leading-tight mb-5">
+          <h2 className="font-poppins font-bold text-3xl sm:text-4xl lg:text-5xl text-[var(--text-primary)] leading-tight mb-5">
             Product Development,<br />
             <span className="text-[var(--text-secondary)]">Not Just Web Design</span>
           </h2>
@@ -46,7 +46,7 @@ export default function ProductDevelopmentSection() {
           </p>
         </AnimatedSection>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-start">
           {/* Left: narrative */}
           <AnimatedSection delay={80}>
             <div className="space-y-6">

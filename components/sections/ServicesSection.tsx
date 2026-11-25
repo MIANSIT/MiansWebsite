@@ -49,15 +49,15 @@ const SERVICES = [
 
 export default function ServicesSection() {
   return (
-    <section id="services" className="py-24 lg:py-32 border-t" style={{ background: 'var(--bg)', borderColor: 'var(--border)' }}>
+    <section id="services" className="py-14 md:py-20 lg:py-24 border-t" style={{ background: 'var(--bg)', borderColor: 'var(--border)' }}>
       <div className="max-w-7xl mx-auto px-6">
-        <AnimatedSection className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+        <AnimatedSection className="flex flex-col md:flex-row md:items-end justify-between mb-8 md:mb-12 gap-6">
           <div>
             <div className="flex items-center gap-3 mb-4">
               <span className="section-line" />
               <span className="font-hind text-[var(--text-secondary)] text-sm tracking-widest uppercase">Our Services</span>
             </div>
-            <h2 className="font-poppins font-bold text-4xl lg:text-5xl text-[var(--text-primary)] leading-tight">
+            <h2 className="font-poppins font-bold text-3xl sm:text-4xl lg:text-5xl text-[var(--text-primary)] leading-tight">
               What We<br />Deliver
             </h2>
           </div>
@@ -69,8 +69,8 @@ export default function ServicesSection() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px" style={{ background: 'var(--border)' }}>
           {SERVICES.map((service, i) => (
             <AnimatedSection key={service.num} delay={i * 60}>
-              <div className="service-card p-8 h-full flex flex-col group">
-                <div className="flex items-start justify-between mb-6">
+              <div className="service-card p-6 md:p-8 h-full flex flex-col group">
+                <div className="flex items-start justify-between mb-4 md:mb-6">
                   <div className="w-12 h-12 flex items-center justify-center" style={{ color: 'var(--text-primary)', opacity: 0.5 }}>
                     <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" className="w-full h-full">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d={service.iconD} />
@@ -82,7 +82,7 @@ export default function ServicesSection() {
                 </div>
 
                 {/* inline SVG illustration */}
-                <div className="w-full mb-5" style={{ height: '80px', color: 'var(--text-primary)' }}>
+                <div className="hidden md:block w-full mb-4" style={{ height: '56px', color: 'var(--text-primary)' }}>
                   <svg viewBox="0 0 100 40" fill="none" stroke="currentColor" strokeWidth="0.8" className="w-full h-full opacity-20">
                     <path d={service.svgD} />
                   </svg>

@@ -6,17 +6,17 @@ import { caseStudies } from '@/app/case-studies/data'
 
 export default function CaseStudiesSection() {
   return (
-    <section id="case-studies" className="py-24 lg:py-32" style={{ background: 'var(--bg-card)' }}>
+    <section id="case-studies" className="py-14 md:py-20 lg:py-24" style={{ background: 'var(--bg-card)' }}>
       <div className="max-w-7xl mx-auto px-6">
 
         {/* Header */}
-        <AnimatedSection className="mb-12">
+        <AnimatedSection className="mb-8 md:mb-10">
           <div className="flex items-center gap-3 mb-4">
             <span className="section-line" />
             <span className="font-hind text-[var(--text-secondary)] text-sm tracking-widest uppercase">Case Studies</span>
           </div>
           <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6">
-            <h2 className="font-poppins font-bold text-4xl lg:text-5xl text-[var(--text-primary)] leading-tight">
+            <h2 className="font-poppins font-bold text-3xl sm:text-4xl lg:text-5xl text-[var(--text-primary)] leading-tight">
               Deep dives into<br />
               <span className="text-[var(--text-secondary)]">the work we do</span>
             </h2>
@@ -27,7 +27,7 @@ export default function CaseStudiesSection() {
         </AnimatedSection>
 
         {/* 4-in-a-row grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 mb-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-5 mb-8 md:mb-12">
           {caseStudies.map((cs, i) => (
             <AnimatedSection key={cs.slug} delay={i * 70}>
               <Link

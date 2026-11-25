@@ -30,9 +30,9 @@ export default function ContactForm() {
   };
 
   return (
-    <section className='py-16 pb-24'>
+    <section className='pt-10 md:pt-16 pb-16 md:pb-24'>
       <div className='max-w-7xl mx-auto px-6'>
-        <div className='grid grid-cols-1 lg:grid-cols-5 gap-12 lg:gap-20'>
+        <div className='grid grid-cols-1 lg:grid-cols-5 gap-8 lg:gap-16'>
           {/* Info panel */}
           <AnimatedSection className='lg:col-span-2'>
             <div className='sticky top-28 space-y-6'>

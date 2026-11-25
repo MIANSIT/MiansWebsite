@@ -67,11 +67,11 @@ export default function ExpertiseSection() {
   return (
     <section
       id="expertise"
-      className="py-24 lg:py-32 border-t"
+      className="py-14 md:py-20 lg:py-24 border-t"
       style={{ background: "var(--bg-subtle)", borderColor: "var(--border)" }}
     >
       <div className="max-w-7xl mx-auto px-6">
-        <AnimatedSection className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+        <AnimatedSection className="flex flex-col md:flex-row md:items-end justify-between mb-8 md:mb-12 gap-6">
           <div>
             <div className="flex items-center gap-3 mb-4">
               <span className="section-line" />
@@ -79,7 +79,7 @@ export default function ExpertiseSection() {
                 Our Expertise
               </span>
             </div>
-            <h2 className="font-poppins font-bold text-4xl lg:text-5xl text-[var(--text-primary)] leading-tight">
+            <h2 className="font-poppins font-bold text-3xl sm:text-4xl lg:text-5xl text-[var(--text-primary)] leading-tight">
               Built on Deep
               <br />
               Expertise
@@ -91,7 +91,7 @@ export default function ExpertiseSection() {
           </p>
         </AnimatedSection>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-start">
           {/* Left: expertise list */}
           <div
             className="divide-y lg:border-r"
@@ -99,7 +99,7 @@ export default function ExpertiseSection() {
           >
             {EXPERTISE.map((item, i) => (
               <AnimatedSection key={item.num} delay={i * 60}>
-                <div className="py-6 lg:pr-12 flex items-start gap-5 group cursor-default">
+                <div className="py-5 lg:py-6 lg:pr-12 flex items-start gap-4 lg:gap-5 group cursor-default">
                   <div
                     className="flex-shrink-0 w-10 h-10 border flex items-center justify-center"
                     style={{

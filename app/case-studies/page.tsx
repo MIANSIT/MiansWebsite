@@ -25,7 +25,7 @@ export default function CaseStudiesPage() {
       <Navbar />
 
       {/* ── Page hero ── */}
-      <section className="pt-40 pb-16 px-6">
+      <section className="pt-28 md:pt-36 pb-10 md:pb-14 px-6">
         <div className="max-w-7xl mx-auto">
           <div className="flex items-center gap-3 mb-6">
             <span className="section-line" />
@@ -49,7 +49,7 @@ export default function CaseStudiesPage() {
       </div>
 
       {/* ── 3-column grid ── */}
-      <section className="pb-24 px-6">
+      <section className="pb-16 md:pb-24 px-6">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {caseStudies.map((cs) => (
@@ -128,7 +128,7 @@ export default function CaseStudiesPage() {
       </section>
 
       {/* ── CTA ── */}
-      <section className="pb-24 px-6">
+      <section className="pb-16 md:pb-24 px-6">
         <div className="max-w-7xl mx-auto">
           <div
             className="p-12 text-center border"

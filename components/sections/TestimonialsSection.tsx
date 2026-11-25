@@ -50,7 +50,7 @@ export default function TestimonialsSection() {
   const row2 = testimonials.slice(5)
 
   return (
-    <section className="py-24 lg:py-32 bg-[var(--bg)] relative overflow-hidden">
+    <section className="py-14 md:py-20 lg:py-24 bg-[var(--bg)] relative overflow-hidden">
       {/* Background image strip */}
       <div className="absolute inset-0 pointer-events-none" aria-hidden>
         <div className="absolute inset-0 opacity-[0.03]"
@@ -59,7 +59,7 @@ export default function TestimonialsSection() {
       </div>
 
       <div className="relative">
-        <div className="max-w-7xl mx-auto px-6 mb-12">
+        <div className="max-w-7xl mx-auto px-6 mb-8 md:mb-12">
           <AnimatedSection>
             <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6">
               <div>
@@ -67,7 +67,7 @@ export default function TestimonialsSection() {
                   <span className="section-line" />
                   <span className="font-hind text-[var(--text-secondary)] text-sm tracking-widest uppercase">Testimonials</span>
                 </div>
-                <h2 className="font-poppins font-bold text-4xl lg:text-5xl text-[var(--text-primary)] leading-tight">
+                <h2 className="font-poppins font-bold text-3xl sm:text-4xl lg:text-5xl text-[var(--text-primary)] leading-tight">
                   Trusted by our clients
                 </h2>
               </div>

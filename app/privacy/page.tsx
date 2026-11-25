@@ -118,7 +118,7 @@ export default function PrivacyPage() {
       <Navbar />
 
       {/* Hero */}
-      <section className='pt-36 pb-12 px-6 relative overflow-hidden grid-bg'>
+      <section className='pt-28 md:pt-36 pb-8 md:pb-12 px-6 relative overflow-hidden grid-bg'>
         <div className='max-w-4xl mx-auto'>
           <div className='flex items-center gap-3 mb-5'>
             <span className='section-line' />

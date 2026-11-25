@@ -51,7 +51,7 @@ export default function CaseStudyPage({
       <Navbar />
 
       {/* ── Hero ── */}
-      <section className="pt-40 pb-16 px-6">
+      <section className="pt-28 md:pt-36 pb-10 md:pb-14 px-6">
         <div className="max-w-5xl mx-auto">
 
           {/* Back link */}

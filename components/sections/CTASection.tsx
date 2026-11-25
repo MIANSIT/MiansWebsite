@@ -12,7 +12,7 @@ const TRUST = [
 
 export default function CTASection() {
   return (
-    <section className="relative py-32 overflow-hidden border-t" style={{ background: '#090909', borderColor: '#1a1a1a' }}>
+    <section className="relative py-16 md:py-24 overflow-hidden border-t" style={{ background: '#090909', borderColor: '#1a1a1a' }}>
       {/* Background image — always dark */}
       <div className="absolute inset-0">
         <img
@@ -38,11 +38,11 @@ export default function CTASection() {
           <h2 className="font-poppins font-black text-4xl lg:text-6xl leading-tight mb-6" style={{ color: '#FAFEFF' }}>
             Let&apos;s Build<br />Something Great
           </h2>
-          <p className="font-hind text-lg leading-relaxed mb-10 max-w-2xl mx-auto" style={{ color: '#C8C8D8' }}>
+          <p className="font-hind text-lg leading-relaxed mb-8 md:mb-10 max-w-2xl mx-auto" style={{ color: '#C8C8D8' }}>
             Have a project in mind? Tell us about it — we respond within 24 hours and love a good challenge.
           </p>
 
-          <div className="flex flex-wrap items-center justify-center gap-4 mb-16">
+          <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-4 mb-10 md:mb-14">
             <Link 
               href="/contact" 
               className="px-8 py-4 text-sm font-semibold inline-flex items-center gap-2 group transition-all duration-300"

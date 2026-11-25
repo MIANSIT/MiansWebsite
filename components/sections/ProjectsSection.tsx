@@ -106,17 +106,17 @@ export default function ProjectsSection() {
   const filtered = active === ALL ? projects : projects.filter(p => p.category === active)
 
   return (
-    <section id="projects" className="py-24 lg:py-32 bg-[var(--bg)]">
+    <section id="projects" className="py-14 md:py-20 lg:py-24 bg-[var(--bg)]">
       <div className="max-w-7xl mx-auto px-6">
 
         {/* Header */}
-        <AnimatedSection className="mb-10">
+        <AnimatedSection className="mb-6 md:mb-8">
           <div className="flex items-center gap-3 mb-4">
             <span className="section-line" />
             <span className="font-hind text-[var(--text-secondary)] text-sm tracking-widest uppercase">Range of Work</span>
           </div>
           <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6">
-            <h2 className="font-poppins font-bold text-4xl lg:text-5xl text-[var(--text-primary)] leading-tight">
+            <h2 className="font-poppins font-bold text-3xl sm:text-4xl lg:text-5xl text-[var(--text-primary)] leading-tight">
               Beyond Product Builds,<br />
               <span className="text-[var(--text-secondary)]">Across Industries</span>
             </h2>
@@ -127,7 +127,7 @@ export default function ProjectsSection() {
         </AnimatedSection>
 
         {/* Filter pills */}
-        <AnimatedSection className="mb-10" delay={80}>
+        <AnimatedSection className="mb-6 md:mb-8" delay={80}>
           <div className="flex flex-wrap gap-2">
             {categories.map((cat) => (
               <button
@@ -146,7 +146,7 @@ export default function ProjectsSection() {
         </AnimatedSection>
 
         {/* Projects grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-5">
           {filtered.map((project, i) => (
             <AnimatedSection key={project.title} delay={i * 60}>
               <a
@@ -198,7 +198,7 @@ export default function ProjectsSection() {
                   <h3 className="font-poppins font-semibold text-[var(--text-primary)] text-base mb-1.5">
                     {project.title}
                   </h3>
-                  <p className="font-hind text-[var(--text-secondary)] text-sm leading-relaxed mb-4 transition-colors">
+                  <p className="font-hind text-[var(--text-secondary)] text-sm leading-relaxed mb-4 transition-colors line-clamp-3 md:line-clamp-none">
                     {project.longDesc}
                   </p>
                   <div className="flex flex-wrap gap-1.5">

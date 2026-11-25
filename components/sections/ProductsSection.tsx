@@ -3,7 +3,7 @@ import AnimatedSection from '@/components/AnimatedSection'
 
 export default function ProductsSection() {
   return (
-    <section id="products" className="py-24 lg:py-32 bg-[var(--bg)] relative overflow-hidden">
+    <section id="products" className="py-14 md:py-20 lg:py-24 bg-[var(--bg)] relative overflow-hidden">
       <div className="absolute inset-0 pointer-events-none" aria-hidden>
         <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[var(--border)] to-transparent" />
         <div className="absolute bottom-0 left-0 right-0 h-px" style={{ background: 'linear-gradient(to right, transparent, var(--border-strong), transparent)' }} />
@@ -11,12 +11,12 @@ export default function ProductsSection() {
       </div>
 
       <div className="max-w-7xl mx-auto px-6 relative">
-        <AnimatedSection className="mb-14">
+        <AnimatedSection className="mb-8 md:mb-12">
           <div className="flex items-center gap-3 mb-4">
             <span className="section-line" />
             <span className="font-hind text-[var(--text-secondary)] text-sm tracking-widest uppercase">Built &amp; Run by MIANS</span>
           </div>
-          <h2 className="font-poppins font-bold text-4xl lg:text-5xl text-[var(--text-primary)] leading-tight mb-4">
+          <h2 className="font-poppins font-bold text-3xl sm:text-4xl lg:text-5xl text-[var(--text-primary)] leading-tight mb-4">
             Built by MIANS.<br />
             <span className="text-[var(--text-secondary)]">Launched for the World.</span>
           </h2>
@@ -28,9 +28,9 @@ export default function ProductsSection() {
         {/* Shei Hoise Card */}
         <AnimatedSection delay={100}>
           <div className="product-card overflow-hidden">
-            <div className="grid grid-cols-1 lg:grid-cols-2 min-h-[500px]">
+            <div className="grid grid-cols-1 lg:grid-cols-2 lg:min-h-[500px]">
               {/* Left: content */}
-              <div className="p-8 lg:p-12 flex flex-col justify-center">
+              <div className="p-6 sm:p-8 lg:p-12 flex flex-col justify-center">
                 <div className="inline-flex items-center gap-2 bg-[var(--text-primary)]/06 border border-[var(--border)] px-3 py-1.5 mb-6 w-fit">
                   <span className="relative flex h-1.5 w-1.5">
                     <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[var(--text-primary)] opacity-60" />
@@ -82,7 +82,7 @@ export default function ProductsSection() {
               </div>
 
               {/* Right: product visual */}
-              <div className="relative overflow-hidden border-l border-[var(--border)] min-h-[320px] lg:min-h-0">
+              <div className="relative overflow-hidden border-t lg:border-t-0 lg:border-l border-[var(--border)] min-h-[280px] lg:min-h-0">
                 {/* Background photo */}
                 <img
                   src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80&fit=crop"

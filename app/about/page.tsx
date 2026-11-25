@@ -115,7 +115,7 @@ export default function AboutPage() {
       <Navbar />
 
       {/* Hero */}
-      <section className='pt-36 pb-16 px-6 relative overflow-hidden grid-bg'>
+      <section className='pt-28 md:pt-36 pb-10 md:pb-14 px-6 relative overflow-hidden grid-bg'>
         <div className='max-w-7xl mx-auto relative'>
           <div className='flex items-center gap-3 mb-5'>
             <span className='section-line' />
@@ -154,7 +154,7 @@ export default function AboutPage() {
           {stats.map((stat) => (
             <div key={stat.label} className='text-center'>
               <div
-                className='font-poppins font-bold text-4xl lg:text-5xl mb-2'
+                className='font-poppins font-bold text-3xl sm:text-4xl lg:text-5xl mb-2'
                 style={{ color: "var(--text-primary)" }}
               >
                 {stat.value}
@@ -171,7 +171,7 @@ export default function AboutPage() {
       </section>
 
       {/* Our Story */}
-      <section className='py-20 px-6'>
+      <section className='py-14 md:py-20 px-6'>
         <div className='max-w-7xl mx-auto'>
           <div className='grid grid-cols-1 lg:grid-cols-2 gap-16 items-start'>
             {/* Left: Text */}
@@ -258,7 +258,7 @@ export default function AboutPage() {
 
       {/* Timeline */}
       <section
-        className='py-20 px-6 border-t'
+        className='py-14 md:py-20 px-6 border-t'
         style={{ borderColor: "var(--border)" }}
       >
         <div className='max-w-7xl mx-auto'>
@@ -272,7 +272,7 @@ export default function AboutPage() {
             </span>
           </div>
           <h2
-            className='font-poppins font-bold text-3xl lg:text-4xl mb-12'
+            className='font-poppins font-bold text-3xl lg:text-4xl mb-8 md:mb-12'
             style={{ color: "var(--text-primary)" }}
           >
             Key Milestones
@@ -336,7 +336,7 @@ export default function AboutPage() {
 
       {/* Values */}
       <section
-        className='py-20 px-6 border-t'
+        className='py-14 md:py-20 px-6 border-t'
         style={{ borderColor: "var(--border)" }}
       >
         <div className='max-w-7xl mx-auto'>
@@ -350,7 +350,7 @@ export default function AboutPage() {
             </span>
           </div>
           <h2
-            className='font-poppins font-bold text-3xl lg:text-4xl mb-12'
+            className='font-poppins font-bold text-3xl lg:text-4xl mb-8 md:mb-12'
             style={{ color: "var(--text-primary)" }}
           >
             Our Values
@@ -391,7 +391,7 @@ export default function AboutPage() {
 
       {/* CTA */}
       <section
-        className='py-20 px-6 border-t'
+        className='py-14 md:py-20 px-6 border-t'
         style={{ borderColor: "var(--border)" }}
       >
         <div className='max-w-3xl mx-auto text-center'>

@@ -213,7 +213,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
       <Navbar />
 
       {/* Article Header */}
-      <section className='pt-36 pb-12 px-6 relative overflow-hidden grid-bg'>
+      <section className='pt-28 md:pt-36 pb-8 md:pb-12 px-6 relative overflow-hidden grid-bg'>
         <div className='max-w-3xl mx-auto relative'>
           <Link
             href='/blog'
@@ -255,7 +255,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
           </div>
 
           <h1
-            className='font-poppins font-bold text-4xl lg:text-5xl leading-tight mb-4'
+            className='font-poppins font-bold text-3xl sm:text-4xl lg:text-5xl leading-tight mb-4'
             style={{ color: "var(--text-primary)" }}
           >
             {post.title}

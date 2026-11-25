@@ -382,7 +382,7 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
       <Navbar />
 
       {/* Hero */}
-      <section className='pt-36 pb-16 px-6 relative overflow-hidden grid-bg'>
+      <section className='pt-28 md:pt-36 pb-10 md:pb-14 px-6 relative overflow-hidden grid-bg'>
         <div className='max-w-7xl mx-auto relative'>
           <div className='flex items-center gap-3 mb-5'>
             <span className='section-line' />
@@ -438,7 +438,7 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
 
       {/* Features */}
       <section
-        className='py-20 px-6 border-t'
+        className='py-14 md:py-20 px-6 border-t'
         style={{ borderColor: "var(--border)" }}
       >
         <div className='max-w-7xl mx-auto'>
@@ -452,7 +452,7 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
             </span>
           </div>
           <h2
-            className='font-poppins font-bold text-3xl lg:text-4xl mb-12'
+            className='font-poppins font-bold text-3xl lg:text-4xl mb-8 md:mb-12'
             style={{ color: "var(--text-primary)" }}
           >
             Key Features
@@ -487,7 +487,7 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
 
       {/* Process */}
       <section
-        className='py-20 px-6 border-t'
+        className='py-14 md:py-20 px-6 border-t'
         style={{ borderColor: "var(--border)" }}
       >
         <div className='max-w-7xl mx-auto'>
@@ -501,7 +501,7 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
             </span>
           </div>
           <h2
-            className='font-poppins font-bold text-3xl lg:text-4xl mb-12'
+            className='font-poppins font-bold text-3xl lg:text-4xl mb-8 md:mb-12'
             style={{ color: "var(--text-primary)" }}
           >
             Our Process
@@ -535,7 +535,7 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
 
       {/* CTA */}
       <section
-        className='py-20 px-6 border-t'
+        className='py-14 md:py-20 px-6 border-t'
         style={{ borderColor: "var(--border)" }}
       >
         <div className='max-w-3xl mx-auto text-center'>

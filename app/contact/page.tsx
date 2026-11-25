@@ -27,7 +27,7 @@ export default function ContactPage() {
   return (
     <main style={{ background: "var(--bg)", minHeight: "100vh" }}>
       <Navbar />
-      <section className='pt-36 pb-16 px-6 relative overflow-hidden grid-bg'>
+      <section className='pt-28 md:pt-36 pb-10 md:pb-14 px-6 relative overflow-hidden grid-bg'>
         <div className='max-w-7xl mx-auto relative'>
           <div className='flex items-center gap-3 mb-5'>
             <span className='section-line' />
