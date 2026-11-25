@@ -119,6 +119,14 @@ export default function HeroSection() {
                 View Our Work
               </Link>
             </div>
+
+            {/* Tagline */}
+            <div className="flex items-center gap-2.5 sm:gap-3 mt-8 lg:mt-0">
+              <span className="section-line !w-5 sm:!w-9" aria-hidden />
+              <p className="tagline text-[10px] sm:text-xs tracking-[0.12em] min-[360px]:tracking-[0.18em] sm:tracking-[0.28em]">
+                Where Software Meets Strategy
+              </p>
+            </div>
           </div>
 
           {/* RIGHT — Rich visual panel */}

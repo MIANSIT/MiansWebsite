@@ -37,7 +37,7 @@ export default function Footer() {
           {/* Brand */}
           <div className='col-span-2'>
             {/* SVG Logo — swaps with theme */}
-            <Link href='/' className='inline-flex items-center mb-5 group'>
+            <Link href='/' className='inline-flex items-center mb-3 group'>
               <Image
                 src={logoSrc}
                 alt='MIANS'
@@ -48,6 +48,10 @@ export default function Footer() {
                 style={{ objectFit: "contain" }}
               />
             </Link>
+
+            <p className='tagline text-[10px] sm:text-[11px] tracking-[0.2em] sm:tracking-[0.26em] mb-4'>
+              Where Software Meets Strategy
+            </p>
 
             <p
               className='font-hind text-sm leading-relaxed max-w-sm mb-6'
